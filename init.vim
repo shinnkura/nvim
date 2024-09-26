@@ -23,13 +23,7 @@ let g:lightline.colorscheme = 'horizon'
 
 
 " nerdtree
-" Start NERDTree when Vim is started without file arguments.
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
 " NERDTree がアクティブなときに Ctrl-n と Ctrl-p で移動できるように設定
 autocmd FileType nerdtree map <buffer> <C-n> j
 autocmd FileType nerdtree map <buffer> <C-p> k
